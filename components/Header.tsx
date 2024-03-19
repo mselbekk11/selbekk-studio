@@ -7,13 +7,12 @@ export function Header() {
     { name: 'Services', href: '/' },
     { name: 'Showcase', href: '/appliances' },
     { name: 'Pricing', href: '/digital-printing' },
-    { name: 'Faq', href: '/about' },
   ];
 
   return (
     <header className='w-full border-b-2'>
       <nav className=' mx-auto max-w-7xl flex justify-between p-6 items-center'>
-        <div className=''>
+        <div className='min-w-[120px]'>
           <Image src='/logo_black.png' alt='logo' width='40' height='100' />
         </div>
         <div className='flex gap-x-12'>
@@ -21,13 +20,13 @@ export function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className='text-s font-semibold text-slate-400'
+              className='text-base font-semibold text-gray-600'
             >
               {item.name}
             </Link>
           ))}
         </div>
-        <div className=''>
+        <div className='min-w-[120px]'>
           <ButtonOne text='Book a call' />
         </div>
       </nav>
