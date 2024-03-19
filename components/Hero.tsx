@@ -13,7 +13,7 @@ export function Hero() {
       </div>
       <div className='border-dotted border-b-2 border-gray-200 w-full flex flex-col items-center'>
         <div className='py-12 max-w-2xl'>
-          <h3 className='text-lg font-semibold text-gray-500 pb-4'>
+          <h3 className='text-lg font-semibold text-gray-500 pb-12'>
             We design & build websites that drive <br /> results and help your
             Business grow. No BS. Just Results.
           </h3>
