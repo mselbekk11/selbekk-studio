@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ButtonOne } from './ButtonOne';
+import { AlignJustify } from 'lucide-react';
+import MobileMenu from './MobileMenu';
 
 export function Header() {
   const navigation = [
@@ -10,23 +12,26 @@ export function Header() {
   ];
 
   return (
-    <header className='w-full border-b-2'>
-      <nav className=' mx-auto max-w-7xl flex justify-between p-6 items-center'>
+    <header className='w-full border-b-2 bg-[#fff] sticky top-0 z-50'>
+      <nav className=' mx-auto max-w-7xl flex justify-between py-4 px-4 items-center'>
         <div className='min-w-[120px]'>
           <Image src='/logo_black.png' alt='logo' width='40' height='100' />
         </div>
-        <div className='flex gap-x-12'>
+        <div className='flex lg:hidden'>
+          <MobileMenu />
+        </div>
+        <div className='hidden lg:flex gap-x-12'>
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className='text-base font-semibold text-gray-600'
+              className='text-base font-semibold text-gray-600 hover:text-[#215DFF]'
             >
               {item.name}
             </Link>
           ))}
         </div>
-        <div className='min-w-[120px]'>
+        <div className='hidden lg:flex min-w-[120px]'>
           <ButtonOne text='Book a call' />
         </div>
       </nav>

@@ -4,7 +4,7 @@ import { ClientList } from './ClientList';
 
 export function Hero() {
   return (
-    <div className='mx-auto max-w-7xl flex flex-col items-center border-dotted border-x-2 py-28 text-center'>
+    <div className='mx-auto max-w-7xl flex flex-col items-center border-dotted border-x-2 pt-28 text-center'>
       <div className='border-dotted border-y-2 border-gray-200 flex flex-col items-center w-full'>
       <h1 className='text-6xl font-semibold py-6 '>
         Custom High-Performance Websites<br /> with
@@ -13,7 +13,7 @@ export function Hero() {
       </div>
       <div className='border-dotted border-b-2 border-gray-200 w-full flex flex-col items-center'>
         <div className='py-12 max-w-2xl'>
-          <h3 className='text-lg font-semibold text-gray-500 pb-12'>
+          <h3 className='text-lg font-semibold text-gray-500 pb-6'>
             We design & build websites that drive <br /> results and help your
             Business grow. No BS. Just Results.
           </h3>

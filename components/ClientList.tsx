@@ -4,43 +4,50 @@ export function ClientList() {
   return (
     <div className='flex -space-x-4 rtl:space-x-reverse'>
       <Image
-        className='w-12 h-12 border-2 border-white rounded-full'
-        src='/morgan.png'
+        className='w-12 h-12 rounded-full'
+        src='/profile-shot-celina.png'
         alt='/'
         width='100'
         height='100'
       />
       <Image
-        className='w-12 h-12 border-2 border-white rounded-full'
-        src='/morgan.png'
+        className='w-12 h-12 rounded-full'
+        src='/profile-shot-chris.png'
         alt='/'
         width='100'
         height='100'
       />
       <Image
-        className='w-12 h-12 border-2 border-white rounded-full'
-        src='/morgan.png'
+        className='w-12 h-12rounded-full'
+        src='/profile-shot-jack.png'
         alt='/'
         width='100'
         height='100'
       />
       <Image
-        className='w-12 h-12 border-2 border-white rounded-full '
-        src='/morgan.png'
+        className='w-12 h-12 rounded-full '
+        src='/profile-shot-joe.png'
         alt='/'
         width='100'
         height='100'
       />
       <Image
-        className='w-12 h-12 border-2 border-white rounded-full '
-        src='/morgan.png'
+        className='w-12 h-12 rounded-full '
+        src='/profile-shot-alex.png'
         alt='/'
         width='100'
         height='100'
       />
       <Image
-        className='w-12 h-12 border-2 border-white rounded-full '
-        src='/morgan.png'
+        className='w-12 h-12 rounded-full '
+        src='/profile-shot-per.png'
+        alt='/'
+        width='100'
+        height='100'
+      />
+      <Image
+        className='w-12 h-12 rounded-full '
+        src='/luba-profile-shot-luba.png'
         alt='/'
         width='100'
         height='100'
