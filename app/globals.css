@@ -6,3 +6,7 @@
 .primary_button:hover {
   box-shadow: 5px 5px #2468ff;
 }
+
+.third_button:hover {
+  box-shadow: 5px 5px #000;
+}

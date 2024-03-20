@@ -1,11 +1,18 @@
 'use client';
 
-import Icon from './Icon';
-import IconFive from './IconFive';
-import IconFour from './IconFour';
-import IconSix from './IconSix';
-import IconThree from './IconThree';
-import IconTwo from './IconTwo';
+// import Icon from './Icon';
+// import IconFive from './IconFive';
+// import IconFour from './IconFour';
+// import IconSix from './IconSix';
+// import IconThree from './IconThree';
+// import IconTwo from './IconTwo';
+import IconOne from '../assets/web-design.json';
+import IconTwo from '../assets/interface-settings.json';
+import IconThree from '../assets/servers.json';
+import IconFour from '../assets/magnifier-plus.json';
+import IconFive from '../assets/chat-message.json';
+import IconSix from '../assets/approve-checked-simple.json';
+import Lottie from 'lottie-react';
 import { SectionTitle } from './SectionTitle';
 
 export function Services() {
@@ -14,37 +21,37 @@ export function Services() {
       name: 'Website Design',
       description:
         'Our website design services create visually captivating, intuitive interfaces that reflect your brands essence and engage your audience',
-      image: <Icon />,
+      icon: IconOne,
     },
     {
       name: 'Website Development',
       description:
         'We deliver cutting-edge website development, building seamless, dynamic, and responsive sites tailored to your unique requirements',
-      image: <IconTwo />,
+      icon: IconTwo,
     },
     {
       name: 'Hosting, deployment & maintenance',
       description:
         'Rely on us for hassle-free hosting, quick deployment, and meticulous maintenance, ensuring your websites optimal performance and security',
-      image: <IconThree />,
+      icon: IconThree,
     },
     {
       name: 'Get Found on Google',
       description:
-        'Our website design services create visually captivating, intuitive interfaces that reflect your brands essence and engage your audience',
-      image: <IconFour />,
+        'Boost your online visibility with our SEO expertise, helping your website achieve top rankings on Google and attract more visitors',
+      icon: IconFour,
     },
     {
       name: 'Regular Updates & Progress Tracking',
       description:
-        'We deliver cutting-edge website development, building seamless, dynamic, and responsive sites tailored to your unique requirements',
-      image: <IconFive />,
+        'Stay up-to date with your websites progress with consistent updates and detailed tracking, ensuring continuous improvement & alignment with your goals.',
+      icon: IconFive,
     },
     {
       name: 'And Everything Else',
       description:
-        'Rely on us for hassle-free hosting, quick deployment, and meticulous maintenance, ensuring your websites optimal performance and security',
-      image: <IconSix />,
+        'Whether its launching an ecommerce website or executing email marketing campaigns, we cater to all your online business needs.',
+      icon: IconSix,
     },
   ];
 
@@ -61,7 +68,12 @@ export function Services() {
               key={item.name}
               className='border-2 border-[#AAAAAA] p-6 bg-white'
             >
-              <div className='pb-2'>{item.image}</div>
+              <div className='pb-2'>
+                <Lottie animationData={item.icon} className='w-12 h-12' />
+              </div>
+              {/* <div className='pb-2'>
+                <Icon />
+              </div> */}
               <div className='text-base font-semibold text-gray-600 pb-2'>
                 {item.name}
               </div>

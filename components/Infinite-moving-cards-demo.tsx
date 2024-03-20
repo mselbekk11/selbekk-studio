@@ -19,14 +19,14 @@ const testimonials = [
   {
     quote:
       'It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.',
-    name: 'Charles Dickens',
+    name: 'one',
     title: 'A Tale of Two Cities',
     image: '/scroll1.png',
   },
   {
     quote:
       "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: 'William Shakespeare',
+    name: 'two',
     title: 'Hamlet',
     image: '/scroll2.png',
   },
@@ -39,35 +39,35 @@ const testimonials = [
   {
     quote:
       'It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.',
-    name: 'Jane Austen',
+    name: 'three',
     title: 'Pride and Prejudice',
     image: '/scroll4.png',
   },
   {
     quote:
       'Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.',
-    name: 'Herman Melville',
+    name: 'four',
     title: 'Moby-Dick',
     image: '/scroll5.png',
   },
   {
     quote:
       'Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.',
-    name: 'Herman Melville',
+    name: 'five',
     title: 'Moby-Dick',
     image: '/scroll6.png',
   },
   {
     quote:
       'Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.',
-    name: 'Herman Melville',
+    name: 'six',
     title: 'Moby-Dick',
     image: '/scroll7.png',
   },
   {
     quote:
       'Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.',
-    name: 'Herman Melville',
+    name: 'seven',
     title: 'Moby-Dick',
     image: '/scroll8.png',
   },

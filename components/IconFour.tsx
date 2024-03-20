@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useRef } from 'react';
 import { Player } from '@lordicon/react';
 
@@ -15,7 +17,7 @@ export default function PlayOnce() {
       ref={playerRef}
       icon={ICON}
       size={50}
-      onComplete={() => playerRef.current?.playFromBeginning()}
+      // onComplete={() => playerRef.current?.playFromBeginning()}
     />
   );
 }
