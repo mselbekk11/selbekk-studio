@@ -28,14 +28,14 @@ export function HowThisWorks() {
   ];
 
   return (
-    <div className=' bg-[#F6F6F6] border-y-2 border-[#D9D9D9]'>
+    <div className='px-4 bg-[#F6F6F6] border-y-2 border-[#D9D9D9]'>
       <div className='mx-auto max-w-7xl flex flex-col items-center border-dotted border-x-2 py-28 text-center'>
         <SectionTitle
           title='How this works'
           text='Discover our streamlined process, designed to guide you
           effortlessly from initial concept to final launch'
         />
-        <div className='grid grid-cols-3 gap-6 text-left'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 text-left'>
           {Howthisworks.map((item) => (
             <div
               key={item.name}
@@ -48,7 +48,9 @@ export function HowThisWorks() {
               <div className='text-lg font-semibold text-black pb-4'>
                 {item.name}
               </div>
-              <div className='text-base text-gray-400 px-6'>{item.description}</div>
+              <div className='text-base text-gray-400 px-6'>
+                {item.description}
+              </div>
             </div>
           ))}
         </div>

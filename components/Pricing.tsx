@@ -7,14 +7,14 @@ import { SectionTitle } from './SectionTitle';
 
 export function Pricing() {
   return (
-    <div className=' bg-white'>
+    <div className='px-4 bg-white'>
       <div className='mx-auto max-w-7xl flex flex-col items-center border-dotted border-x-2 py-28 text-center'>
         <SectionTitle
           title='The right price for you, with maximum value'
           text='Simple and affordable pricing that makes sense for your business.
           No hidden fees'
         />
-        <div className='grid grid-cols-2 gap-6 w-full'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 w-full'>
           <div className='border-2 border-[#000]'>
             <div className='border-b-2 border-[#000] grid grid-cols-2 p-6'>
               <div className='flex flex-col text-left'>

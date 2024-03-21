@@ -56,32 +56,34 @@ export function Services() {
   ];
 
   return (
-    <div className=' bg-[#F6F6F6] mt-12 border-y-2 border-[#D9D9D9]'>
-      <div className='mx-auto max-w-7xl flex flex-col items-center border-dotted border-x-2 py-28 text-center'>
-        <SectionTitle
-          title='We handle just about everything'
-          text='We handle everything from design to deployment to get your website shipped and ready to go!'
-        />
-        <div className='grid grid-cols-3 gap-6 text-left'>
-          {Services.map((item) => (
-            <div
-              key={item.name}
-              className='border-2 border-[#AAAAAA] p-6 bg-white'
-            >
-              <div className='pb-2'>
-                <Lottie animationData={item.icon} className='w-12 h-12' />
-              </div>
-              {/* <div className='pb-2'>
+    <div className='px-4 bg-[#F6F6F6] mt-12 border-y-2 border-[#D9D9D9]'>
+      <div className=''>
+        <div className='mx-auto max-w-7xl flex flex-col items-center border-dotted border-x-2 py-28 text-center'>
+          <SectionTitle
+            title='We handle just about everything'
+            text='We handle everything from design to deployment to get your website shipped and ready to go!'
+          />
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left'>
+            {Services.map((item) => (
+              <div
+                key={item.name}
+                className='border-2 border-[#AAAAAA] p-6 bg-white'
+              >
+                <div className='pb-2'>
+                  <Lottie animationData={item.icon} className='w-12 h-12' />
+                </div>
+                {/* <div className='pb-2'>
                 <Icon />
               </div> */}
-              <div className='text-base font-semibold text-gray-600 pb-2'>
-                {item.name}
+                <div className='text-base font-semibold text-gray-600 pb-2'>
+                  {item.name}
+                </div>
+                <div className='text-sm text-gray-400'>{item.description}</div>
               </div>
-              <div className='text-sm text-gray-400'>{item.description}</div>
-            </div>
-          ))}
+            ))}
+          </div>
+          {/* <Icon /> */}
         </div>
-        {/* <Icon /> */}
       </div>
     </div>
   );

@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.1.1",
     "@lordicon/element": "^1.6.0",
     "@lordicon/react": "^1.6.0",
     "@preline/tooltip": "^2.0.2",

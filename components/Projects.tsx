@@ -23,14 +23,14 @@ export function Projects() {
   ];
 
   return (
-    <div className=' bg-white'>
+    <div className=' bg-white px-4'>
       <div className='mx-auto max-w-7xl flex flex-col items-center border-dotted border-x-2 py-28 text-center'>
         <SectionTitle
           title='Selected Projects'
           text='We take pride in building custom solutions that help
           Busienss owners turn their dreams into reality!'
         />
-        <div className='grid grid-cols-3 gap-6 text-left w-full'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 text-left w-full'>
           {Projects.map((item) => (
             <div key={item.name} className='bg-white'>
               <div className='p-2 w-full bg-[#2F2F2F]'>
