@@ -53,13 +53,13 @@ export default function Terms() {
   ];
 
   return (
-    <div className='min-h-screen mx-auto max-w-[800px] flex flex-col items-center border-dotted border-x-2 py-28 px-6 text-left'>
+    <div className='min-h-screen mx-auto max-w-[800px] flex flex-col items-center border-dotted border-x-2 py-8 px-6 text-left'>
       <div className='flex flex-col w-full'>
         <div className='pb-10'>
           <h1 className='text-2xl font-semibold pb-4'>
             Welcome to Selbekk Studio
           </h1>
-          <p className='pb-4'>
+          <p className='text-sm text-gray-500 pb-4'>
             Thank you for choosing Selbekk Studio for your web design and
             development needs. By accessing or using our services, you agree to
             be bound by the terms and conditions set forth below. If you do not
@@ -72,7 +72,7 @@ export default function Terms() {
             <h2 className='text-lg font-semibold pb-2 underline'>
               {item.title}
             </h2>
-            <p className="text-sm text-gray-500">{item.content}</p>
+            <p className='text-sm text-gray-500'>{item.content}</p>
           </div>
         ))}
       </div>
