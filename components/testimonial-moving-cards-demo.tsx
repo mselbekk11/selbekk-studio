@@ -18,51 +18,44 @@ export function TestimonialMovingCardsDemo() {
 const testimonials = [
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: 'Celina Shi',
-    title: 'Director of X',
-    image: '/profile-shot-celina.png',
+      'The Selbekk Studio  team delivered our project with astonishing speed and quality, far exceeding our expectations. Since the launch, our business has seen a noticeable increase in traffic and sales.',
+    name: 'Per Selbekk',
+    title: 'Founder & CEO - Renevo Capital ',
+    image: '/profile-shot-per.png',
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: 'Chris Osborne',
-    title: 'Director of X',
-    image: '/profile-shot-chris.png',
+      'Their cost-effective solutions and rapid delivery set them apart in the web development industry. The responsiveness and attention to detail have directly contributed to our significant business growth post-launch.',
+    name: 'Greg Cussell',
+    title: 'Founder & CEO - Nokpay',
+    image: '/greg.png',
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: 'Luba Ismakov',
-    title: 'Director of X',
-    image: '/luba-profile-shot-luba.png',
+      'They exceeded every expectation with their swift and efficient website delivery, offering incredible value for money. Our business has experienced substantial growth thanks to their exceptional work.',
+    name: 'Ben Putley',
+    title: 'Founder & CEO - Alkimi',
+    image: '/ben.png',
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: 'Jack Crowe',
-    title: 'Director of X',
-    image: '/profile-shot-jack.png',
-  },
-  {
-    quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: 'Joe DCunha',
-    title: 'Director of X',
+      'The speed at which they delivered our high-quality website was simply remarkable. Their constant availability and the subsequent business growth weve seen is a testament to their outstanding service.',
+    name: 'Joe D’Cunha',
+    title: 'Co-Founder & Director - Nielson Place',
     image: '/profile-shot-joe.png',
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: 'Alex Cochrane',
-    title: 'Director of X',
-    image: '/profile-shot-alex.png',
+      'Unmatched in speed and efficiency, their team provided a top-notch website that boosted our online presence and business revenue. Their responsiveness and dedication to our needs were truly exceptional.',
+    name: 'Danik Budovsky',
+    title: 'Founder & Owner - Advanced Ortho Labs SF',
+    image: '/danik.png',
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: 'Per Selbekk',
-    title: 'Director of X',
-    image: '/profile-shot-per.png',
+      'Opting for their web development services resulted in a fantastic website delivered quickly and cost-effectively. Weve observed a remarkable uptick in our business, all thanks to their skillful and attentive work.',
+    name: 'Andrew Miller',
+    title: 'Co-Founder & CEO - Kodama',
+    image: '/andrew.png',
   },
 ];

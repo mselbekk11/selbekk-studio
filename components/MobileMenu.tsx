@@ -12,9 +12,9 @@ export default function MobileMenu() {
   const mobileNav = useRef<HTMLDivElement>(null);
 
   const navigation = [
-    { name: 'Services', href: '/' },
-    { name: 'Showcase', href: '/appliances' },
-    { name: 'Pricing', href: '/digital-printing' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Showcase', href: '/#showcase' },
+    { name: 'Pricing', href: '/#pricing' },
   ];
 
   // close the mobile menu on click outside

@@ -56,7 +56,10 @@ export function Services() {
   ];
 
   return (
-    <div className='px-4 bg-[#F6F6F6] mt-12 border-y-2 border-[#D9D9D9]'>
+    <div
+      className='px-4 bg-[#F6F6F6] mt-12 border-y-2 border-[#D9D9D9]'
+      id='services'
+    >
       <div className=''>
         <div className='mx-auto max-w-7xl flex flex-col items-center border-dotted border-x-2 py-28 text-center'>
           <SectionTitle

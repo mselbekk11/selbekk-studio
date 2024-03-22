@@ -1,6 +1,4 @@
 import { Book } from '@/components/Book';
-import { Footer } from '@/components/Footer';
-import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { HowThisWorks } from '@/components/HowThisWorks';
 import { InfiniteMovingCardsDemo } from '@/components/Infinite-moving-cards-demo';
@@ -14,7 +12,6 @@ import { TestimonialMovingCardsDemo } from '@/components/testimonial-moving-card
 export default function Home() {
   return (
     <>
-      <Header />
       <main className='min-h-screen'>
         <Hero />
         <InfiniteMovingCardsDemo />
@@ -27,7 +24,6 @@ export default function Home() {
         <Faq />
         <Book />
       </main>
-      <Footer />
     </>
   );
 }

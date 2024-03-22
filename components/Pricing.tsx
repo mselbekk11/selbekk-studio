@@ -7,7 +7,7 @@ import { SectionTitle } from './SectionTitle';
 
 export function Pricing() {
   return (
-    <div className='px-4 bg-white'>
+    <div className='px-4 bg-white' id='pricing'>
       <div className='mx-auto max-w-7xl flex flex-col items-center border-dotted border-x-2 py-28 text-center'>
         <SectionTitle
           title='The right price for you, with maximum value'
@@ -16,13 +16,13 @@ export function Pricing() {
         />
         <div className='grid grid-cols-1 md:grid-cols-2 gap-6 w-full'>
           <div className='border-2 border-[#000]'>
-            <div className='border-b-2 border-[#000] grid grid-cols-2 p-6'>
+            <div className='border-b-2 border-[#000] grid grid-cols-2 p-6 bg-[#fff]'>
               <div className='flex flex-col text-left'>
                 <div className='text-2xl font-bold pb-2'>Website</div>
                 <div className='text-gray-500'>One off Payment</div>
               </div>
               <div className='flex flex-col justify-center text-4xl font-semibold text-[#2568FF] text-right'>
-                $2,999
+                $1,999
               </div>
             </div>
             <div className='border-b-2 border-[#000] p-6 text-left text-gray-500'>
@@ -126,13 +126,13 @@ export function Pricing() {
             </div>
           </div>
           <div className='border-2 border-[#000]'>
-            <div className='border-b-2 border-[#000] grid grid-cols-2 p-6'>
+            <div className='border-b-2 border-[#000] grid grid-cols-2 p-6 bg-[#000]'>
               <div className='flex flex-col text-left'>
-                <div className='text-2xl font-bold pb-2'>Website Plus</div>
-                <div className='text-gray-500'>Prices Start from:</div>
+                <div className='text-2xl font-bold pb-2 text-white'>Website Plus</div>
+                <div className='text-gray-300'>Prices Start from:</div>
               </div>
-              <div className='flex flex-col justify-center text-4xl font-semibold text-[#000] text-right'>
-                $3,999
+              <div className='flex flex-col justify-center text-4xl font-semibold text-[#fff] text-right'>
+                $2,999
               </div>
             </div>
             <div className='border-b-2 border-[#000] p-6 text-left text-gray-500'>

@@ -6,17 +6,19 @@ import MobileMenu from './MobileMenu';
 
 export function Header() {
   const navigation = [
-    { name: 'Services', href: '/' },
-    { name: 'Showcase', href: '/appliances' },
-    { name: 'Pricing', href: '/digital-printing' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Showcase', href: '/#showcase' },
+    { name: 'Pricing', href: '/#pricing' },
   ];
 
   return (
     <header className='w-full border-b-2 bg-[#fff] sticky top-0 z-50'>
       <nav className=' mx-auto max-w-7xl flex justify-between py-4 px-4 items-center'>
-        <div className='min-w-[120px]'>
-          <Image src='/logo_black.png' alt='logo' width='40' height='100' />
-        </div>
+        <Link href='/'>
+          <div className='min-w-[120px]'>
+            <Image src='/logo_black.png' alt='logo' width='40' height='100' />
+          </div>
+        </Link>
         <div className='flex lg:hidden'>
           <MobileMenu />
         </div>
