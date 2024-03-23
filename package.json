@@ -15,6 +15,7 @@
     "@lordicon/react": "^1.6.0",
     "@preline/tooltip": "^2.0.2",
     "@vercel/analytics": "^1.2.2",
+    "@vercel/speed-insights": "^1.0.10",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.14",
     "lottie-react": "^2.4.0",
