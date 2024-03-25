@@ -27,7 +27,7 @@ export function Projects() {
 
   return (
     <div className=' bg-white px-4' id='showcase'>
-      <div className='mx-auto max-w-7xl flex flex-col items-center border-dotted border-x-2 py-20 md:py-28 text-center'>
+      <div className='mx-auto max-w-7xl flex flex-col items-center md:border-dotted md:border-x-2 py-20 md:py-28 text-center'>
         <SectionTitle
           title='Selected Projects'
           text='We take pride in building custom solutions that help

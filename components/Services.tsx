@@ -61,7 +61,7 @@ export function Services() {
       id='services'
     >
       <div className=''>
-        <div className='mx-auto max-w-7xl flex flex-col items-center border-dotted border-x-2 py-20 md:py-28 text-center'>
+        <div className='mx-auto max-w-7xl flex flex-col items-center md:border-dotted md:border-x-2 py-20 md:py-28 text-center'>
           <SectionTitle
             title='We handle just about everything'
             text='We handle everything from design to deployment to get your website shipped and ready to go!'
@@ -70,7 +70,7 @@ export function Services() {
             {Services.map((item) => (
               <div
                 key={item.name}
-                className='border-2 border-[#AAAAAA] p-6 bg-white'
+                className='border-2 border-[#AAAAAA] p-6 bg-white '
               >
                 <div className='pb-2'>
                   <Lottie animationData={item.icon} className='w-12 h-12' />

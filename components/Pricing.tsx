@@ -8,7 +8,7 @@ import { SectionTitle } from './SectionTitle';
 export function Pricing() {
   return (
     <div className='px-4 bg-white' id='pricing'>
-      <div className='mx-auto max-w-7xl flex flex-col items-center border-dotted border-x-2 py-20 md:py-28 text-center'>
+      <div className='mx-auto max-w-7xl flex flex-col items-center md:border-dotted md:border-x-2 py-20 md:py-28 text-center'>
         <SectionTitle
           title='The right price for you'
           text='Simple and affordable pricing that makes sense for your business.
