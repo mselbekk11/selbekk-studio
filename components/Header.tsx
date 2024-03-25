@@ -12,11 +12,11 @@ export function Header() {
   ];
 
   return (
-    <header className='w-full border-b-2 bg-[#fff] sticky top-0 z-50'>
+    <header className='w-full bg-[#fff] sticky top-0 z-50 shadow-md shadow-slate-300'>
       <nav className=' mx-auto max-w-7xl flex justify-between py-4 px-4 items-center'>
         <Link href='/'>
           <div className='min-w-[120px]'>
-            <Image src='/logo_black.png' alt='logo' width='40' height='100' />
+            <Image src='/logo_black.png' alt='logo' width='35' height='100' />
           </div>
         </Link>
         <div className='flex lg:hidden'>
