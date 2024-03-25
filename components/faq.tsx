@@ -49,13 +49,13 @@ export function Faq() {
 
   return (
     <div className=' bg-white px-4'>
-      <div className='mx-auto max-w-7xl flex flex-col items-center border-dotted border-x-2 py-28 text-center'>
+      <div className='mx-auto max-w-7xl flex flex-col items-center border-dotted border-x-2 py-20 md:py-28 text-center'>
         <SectionTitle
           title='Frequently Asked Questions'
           text='Find answers to common inquiries,
           where we address your most pressing questions'
         />
-        <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 text-left w-full'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-12 md:gap-6 text-left w-full'>
           <div className='lg:col-span-2 border-[#000] border-2 px-6 pb-6 bg-[#F9F9F9]'>
             <dl className='space-y-6 divide-y divide-gray-900/10'>
               {faqs.map((faq) => (
@@ -64,7 +64,7 @@ export function Faq() {
                     <>
                       <dt>
                         <Disclosure.Button className='flex w-full items-start justify-between text-left text-gray-900'>
-                          <span className='text-base font-semibold leading-7'>
+                          <span className='text-sm md:text-base font-semibold leading-7'>
                             {faq.question}
                           </span>
                           <span className='ml-6 flex h-7 items-center'>
@@ -77,7 +77,7 @@ export function Faq() {
                         </Disclosure.Button>
                       </dt>
                       <Disclosure.Panel as='dd' className='mt-2 pr-12'>
-                        <p className='text-base leading-7 text-gray-600'>
+                        <p className='text-sm md:text-base leading-7 text-gray-600'>
                           {faq.answer}
                         </p>
                       </Disclosure.Panel>
@@ -87,8 +87,8 @@ export function Faq() {
               ))}
             </dl>
           </div>
-          <div className='bg-[#000] text-white p-6 max-h-[300px] flex flex-col items-center justify-center'>
-            <Image src='/logo-white.svg' alt='logo' width='70' height='70' />
+          <div className='bg-[#000] text-white p-6 max-h-[300px] lg:flex flex-col items-center justify-center hidden'>
+            <Image src='/logo_white-2.png' alt='logo' width='70' height='70' />
             <div className='py-4'>
               <p>Have more Questions?</p>
               <p>Book a free Intro Call</p>

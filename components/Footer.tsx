@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <div className='w-full bg-[#000] flex flex-col items-center py-20 px-6'>
       <Image
-        src='/logo-white.svg'
+        src='/logo_white-2.png'
         alt='logo'
         width='50'
         height='50'

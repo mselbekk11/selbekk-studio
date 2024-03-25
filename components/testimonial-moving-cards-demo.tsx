@@ -5,7 +5,7 @@ import { TestimonialMovingCards } from '@/components/testimonial-moving-cards';
 
 export function TestimonialMovingCardsDemo() {
   return (
-    <div className='h-[20rem] rounded-md flex flex-col antialiased bg-[#F6F6F6] items-center justify-center relative overflow-hidden border-b-2 border-[#D9D9D9]'>
+    <div className='h-[25rem] rounded-md flex flex-col antialiased bg-[#F6F6F6] items-center justify-center relative overflow-hidden border-b-2 border-[#D9D9D9] pb-10'>
       <TestimonialMovingCards
         items={testimonials}
         direction='right'

@@ -109,17 +109,17 @@ export const TestimonialMovingCards = ({
                   </div>
                   <div>
                     <span className='flex flex-col gap-1'>
-                      <span className=' text-base leading-[1.6] text-black font-semibold'>
+                      <span className='text-sm md:text-base leading-[1.6] text-black font-semibold'>
                         {item.name}
                       </span>
-                      <span className=' text-sm leading-[1.6] text-gray-500 font-normal'>
+                      <span className='text-xs md:text-sm leading-[1.6] text-gray-500 font-normal'>
                         {item.title}
                       </span>
                     </span>
                   </div>
                 </div>
               </div>
-              <span className=' relative z-20 text-sm leading-[1.6] text-black font-normal'>
+              <span className=' relative z-20 text-xs md:text-sm leading-[1.6] text-black font-normal'>
                 {item.quote}
               </span>
             </blockquote>
