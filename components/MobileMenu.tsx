@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import { AlignJustify } from 'lucide-react';
+import { AlignJustify, X } from 'lucide-react';
 import { ButtonOne } from './ButtonOne';
 
 export default function MobileMenu() {
@@ -54,16 +54,11 @@ export default function MobileMenu() {
         onClick={() => setMobileNavOpen(!mobileNavOpen)}
       >
         <span className='sr-only'>Menu</span>
-        <svg
-          className='w-6 h-6 fill-current text-black hover:text-gray-500 transition duration-150 ease-in-out'
-          viewBox='0 0 24 24'
-          xmlns='http://www.w3.org/2000/svg'
-        >
-          <rect y='4' width='24' height='2' rx='1' />
-          <rect y='11' width='24' height='2' rx='1' />
-          <rect y='18' width='24' height='2' rx='1' />
-        </svg>
-        {/* <AlignJustify /> */}
+        {mobileNavOpen ? (
+          <X className='w-6 h-6 fill-current text-black hover:text-gray-500 transition duration-150 ease-in-out' />
+        ) : (
+          <AlignJustify className='w-6 h-6 fill-current text-black hover:text-gray-500 transition duration-150 ease-in-out' />
+        )}
       </button>
 
       {/*Mobile navigation */}
