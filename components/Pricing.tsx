@@ -142,7 +142,7 @@ export function Pricing() {
                   Custom Fonts
                 </p>
               </div>
-              <a href='/'>
+              <a href='https://buy.stripe.com/7sI03ide20oH97G144'>
                 <button className='bg-[#2568FF] py-2 px-6 text-[#fff] rounded third_button hover:duration-300 w-full'>
                   Buy Now
                 </button>
