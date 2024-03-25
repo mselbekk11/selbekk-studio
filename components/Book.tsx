@@ -15,9 +15,11 @@ export function Book() {
             Results.
           </h3>
           <div>
-            <button className='bg-[#000] py-2 px-6 text-[#fff] rounded secondary_button hover:duration-300'>
-              Book a Discovery Call
-            </button>
+            <a href='https://cal.com/morgan-selbekk-9fhtxr'>
+              <button className='bg-[#000] py-2 px-6 text-[#fff] rounded secondary_button hover:duration-300'>
+                Book a Discovery Call
+              </button>
+            </a>
           </div>
         </div>
       </div>

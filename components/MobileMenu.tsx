@@ -87,12 +87,14 @@ export default function MobileMenu() {
           ))}
 
           <li>
-            <button
-              className='bg-[#000] py-2 px-6 text-[#fff] rounded primary_button hover:duration-300'
-              onClick={() => setMobileNavOpen(false)}
-            >
-              Book a Call
-            </button>
+            <a href='https://cal.com/morgan-selbekk-9fhtxr'>
+              <button
+                className='bg-[#000] py-2 px-6 text-[#fff] rounded primary_button hover:duration-300'
+                onClick={() => setMobileNavOpen(false)}
+              >
+                Book a Call
+              </button>
+            </a>
           </li>
         </ul>
       </nav>

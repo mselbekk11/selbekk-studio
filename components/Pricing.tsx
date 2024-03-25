@@ -142,9 +142,11 @@ export function Pricing() {
                   Custom Fonts
                 </p>
               </div>
-              <button className='bg-[#2568FF] py-2 px-6 text-[#fff] rounded third_button hover:duration-300 w-full'>
-                Buy Now
-              </button>
+              <a href='/'>
+                <button className='bg-[#2568FF] py-2 px-6 text-[#fff] rounded third_button hover:duration-300 w-full'>
+                  Buy Now
+                </button>
+              </a>
             </div>
           </div>
           <div className='border-2 border-[#000]'>
@@ -252,7 +254,7 @@ export function Pricing() {
               </div>
               <div className='flex items-center w-full pb-2'>
                 <CheckCircle2 color='#000' size={20} className='mr-2' />
-                <p className='text-sm md:text-baseleading-8 text-black'>
+                <p className='text-sm md:text-base leading-8 text-black'>
                   Database creation & Management
                 </p>
               </div>
@@ -274,9 +276,11 @@ export function Pricing() {
                   Custom Fonts
                 </p>
               </div>
-              <button className='bg-[#000] py-2 px-6 text-[#fff] rounded primary_button hover:duration-300 w-full'>
-                Book a Discovery Call
-              </button>
+              <a href='https://cal.com/morgan-selbekk-9fhtxr'>
+                <button className='bg-[#000] py-2 px-6 text-[#fff] rounded primary_button hover:duration-300 w-full'>
+                  Book a Discovery Call
+                </button>
+              </a>
             </div>
           </div>
         </div>

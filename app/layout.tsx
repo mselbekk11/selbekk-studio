@@ -6,6 +6,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import dynamic from 'next/dynamic';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,8 +23,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const CrispWithNoSSR = dynamic(() => import('../components/crisp'));
+
   return (
-    <html lang='en'>
+    <html lang='en' className='!scroll-smooth'>
+      <CrispWithNoSSR />
       <body className={space.className}>
         <Header />
         {children}

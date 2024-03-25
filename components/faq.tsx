@@ -93,9 +93,11 @@ export function Faq() {
               <p>Have more Questions?</p>
               <p>Book a free Intro Call</p>
             </div>
-            <button className='bg-[#fff] py-2 px-6 text-[#000] rounded primary_button hover:duration-300 w-full'>
-              Book a Discovery Call
-            </button>
+            <a href='https://cal.com/morgan-selbekk-9fhtxr'>
+              <button className='bg-[#fff] py-2 px-6 text-[#000] rounded primary_button hover:duration-300 w-full'>
+                Book a Discovery Call
+              </button>
+            </a>
           </div>
         </div>
       </div>
