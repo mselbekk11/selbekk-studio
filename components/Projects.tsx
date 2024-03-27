@@ -6,7 +6,7 @@ import { SectionTitle } from './SectionTitle';
 export function Projects() {
   const Projects = [
     {
-      name: 'Advaned Ortho Labs',
+      name: 'Advanced Ortho Labs',
       description: 'A San Francisco based Orthodontic Lab',
       image: '/scroll3.png',
       href: 'https://www.advancedortholabsf.com/',
@@ -31,7 +31,7 @@ export function Projects() {
         <SectionTitle
           title='Selected Projects'
           text='We take pride in building custom solutions that help
-          Busienss owners turn their dreams into reality!'
+          Business owners turn their dreams into reality!'
         />
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-12 md:gap-6 text-left w-full'>
           {Projects.map((item) => (

@@ -267,7 +267,7 @@ export function Pricing() {
               <div className='flex items-center w-full pb-2'>
                 <CheckCircle2 color='#000' size={20} className='mr-2' />
                 <p className='text-sm md:text-base leading-8 text-black'>
-                  Recieve Payments
+                  Receive Payments
                 </p>
               </div>
               <div className='flex items-center w-full pb-6'>
