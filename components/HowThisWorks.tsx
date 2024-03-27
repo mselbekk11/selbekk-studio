@@ -39,7 +39,7 @@ export function HowThisWorks() {
           {Howthisworks.map((item) => (
             <div
               key={item.name}
-              className='border-2 border-[#AAAAAA] p-6 bg-white flex flex-col items-center text-center'
+              className='border-2 border-[#f0f0f0] p-6 bg-white flex flex-col items-center text-center'
             >
               {/* <div className='pb-2'>{item.image}</div> */}
               <div className='pb-4'>

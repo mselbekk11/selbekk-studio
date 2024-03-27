@@ -70,7 +70,7 @@ export function Services() {
             {Services.map((item) => (
               <div
                 key={item.name}
-                className='border-2 border-[#AAAAAA] p-6 bg-white '
+                className='border-2 border-[#f0f0f0] p-6 bg-white '
               >
                 <div className='pb-2'>
                   <Lottie animationData={item.icon} className='w-12 h-12' />

@@ -139,7 +139,7 @@ export function Pricing() {
               <div className='flex items-center w-full pb-6'>
                 <CirclePlus color='#ccc' size={20} className='mr-2 rotate-45' />
                 <p className='text-sm md:text-base leading-8 text-[#ccc]'>
-                  Custom Fonts
+                  Custom Forms
                 </p>
               </div>
               <a href='https://buy.stripe.com/7sI03ide20oH97G144'>
@@ -273,7 +273,7 @@ export function Pricing() {
               <div className='flex items-center w-full pb-6'>
                 <CheckCircle2 color='#000' size={20} className='mr-2' />
                 <p className='text-sm md:text-base leading-8 text-black'>
-                  Custom Fonts
+                  Custom Forms
                 </p>
               </div>
               <a href='https://cal.com/morgan-selbekk-9fhtxr'>

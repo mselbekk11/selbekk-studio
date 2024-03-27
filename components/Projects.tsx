@@ -37,7 +37,7 @@ export function Projects() {
           {Projects.map((item) => (
             <div key={item.name} className='group'>
               <a href={item.href} target='blank'>
-                <div className='p-2 w-full bg-[#F9F9F9] border-[#AAAA] border-x-2 border-t-2'>
+                <div className='p-2 w-full bg-[#F9F9F9] border-[#f0f0f0] border-x-2 border-t-2'>
                   <Image
                     src={item.image}
                     alt='project'
@@ -46,7 +46,7 @@ export function Projects() {
                     className='w-full'
                   />
                 </div>
-                <div className='px-6 pb-6 border-x-2 border-b-2 border-[#AAAA] bg-[#F9F9F9]'>
+                <div className='px-6 pb-6 border-x-2 border-b-2 border-[#f0f0f0] bg-[#F9F9F9]'>
                   <div className='text-base font-semibold text-black pb-2 group-hover:text-[#2568FF]'>
                     {item.name}
                   </div>
