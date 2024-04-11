@@ -5,6 +5,7 @@ import { InfiniteMovingCardsDemo } from '@/components/Infinite-moving-cards-demo
 // import { Pricing } from '@/components/Pricing';
 import { Projects } from '@/components/Projects';
 import { Services } from '@/components/Services';
+import { Steps } from '@/components/Steps';
 import { Testimonials } from '@/components/Testimonials';
 import { Faq } from '@/components/faq';
 import { TestimonialMovingCardsDemo } from '@/components/testimonial-moving-cards-demo';
@@ -17,7 +18,8 @@ export default function Home() {
         <InfiniteMovingCardsDemo />
         <Services />
         <Projects />
-        <HowThisWorks />
+        {/* <HowThisWorks /> */}
+        <Steps />
         {/* <Pricing /> */}
         <Testimonials />
         <TestimonialMovingCardsDemo />
