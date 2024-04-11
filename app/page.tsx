@@ -2,7 +2,7 @@ import { Book } from '@/components/Book';
 import { Hero } from '@/components/Hero';
 import { HowThisWorks } from '@/components/HowThisWorks';
 import { InfiniteMovingCardsDemo } from '@/components/Infinite-moving-cards-demo';
-import { Pricing } from '@/components/Pricing';
+// import { Pricing } from '@/components/Pricing';
 import { Projects } from '@/components/Projects';
 import { Services } from '@/components/Services';
 import { Testimonials } from '@/components/Testimonials';
@@ -18,7 +18,7 @@ export default function Home() {
         <Services />
         <Projects />
         <HowThisWorks />
-        <Pricing />
+        {/* <Pricing /> */}
         <Testimonials />
         <TestimonialMovingCardsDemo />
         <Faq />

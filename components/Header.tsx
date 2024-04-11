@@ -7,8 +7,8 @@ import MobileMenu from './MobileMenu';
 export function Header() {
   const navigation = [
     { name: 'Services', href: '/#services' },
-    { name: 'Showcase', href: '/#showcase' },
-    { name: 'Pricing', href: '/#pricing' },
+    { name: 'Work', href: '/#showcase' },
+    { name: 'FAQ', href: '/#faq' },
   ];
 
   return (

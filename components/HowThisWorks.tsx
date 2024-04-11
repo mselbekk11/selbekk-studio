@@ -28,7 +28,7 @@ export function HowThisWorks() {
   ];
 
   return (
-    <div className='px-4 bg-[#F6F6F6] border-y-2 border-[#D9D9D9]'>
+    <div className='px-4 bg-[#F3F4F5] border-y-2 border-[#D9D9D9]'>
       <div className='mx-auto max-w-7xl flex flex-col items-center md:border-dotted md:border-x-2 py-20 md:py-28 text-center'>
         <SectionTitle
           title='How this works'
@@ -39,11 +39,11 @@ export function HowThisWorks() {
           {Howthisworks.map((item) => (
             <div
               key={item.name}
-              className='border-2 border-[#f0f0f0] p-6 bg-white flex flex-col items-center text-center'
+              className='border-2 border-[#D9D9D9] p-6 bg-white flex flex-col items-center text-center rounded-md'
             >
               {/* <div className='pb-2'>{item.image}</div> */}
               <div className='pb-4'>
-                <Lottie animationData={item.icon} className='w-28 h-28' />
+                <Lottie animationData={item.icon} className='w-20 h-20' />
               </div>
               <div className='text-lg font-semibold text-black pb-4'>
                 {item.name}

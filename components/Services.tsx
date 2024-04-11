@@ -57,7 +57,7 @@ export function Services() {
 
   return (
     <div
-      className='px-4 bg-[#F6F6F6] mt-12 border-y-2 border-[#D9D9D9]'
+      className='px-4 bg-[#F3F4F5] mt-12 border-y-2 border-[#D9D9D9]'
       id='services'
     >
       <div className=''>
@@ -70,7 +70,7 @@ export function Services() {
             {Services.map((item) => (
               <div
                 key={item.name}
-                className='border-2 border-[#f0f0f0] p-6 bg-white '
+                className='border-2 border-[#D9D9D9] p-6 bg-white rounded-md'
               >
                 <div className='pb-2'>
                   <Lottie animationData={item.icon} className='w-12 h-12' />
