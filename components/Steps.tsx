@@ -14,37 +14,37 @@ export function Steps() {
     {
       name: '1. Discovery & Research',
       description:
-        'Our website design services create visually captivating, intuitive interfaces that reflect your brands essence and engage your audience',
+        'Through a discovery call, you tell us about your company origin, your message and your product. We then research your industry and the competition',
       icon: IconOne,
     },
     {
       name: '2. Visual Direction',
       description:
-        'We deliver cutting-edge website development, building seamless, dynamic, and responsive sites tailored to your unique requirements',
+        'We reimagine the brand identity through various experiments with colors, graphics, animations, composition patterns and UI shapes',
       icon: IconTwo,
     },
     {
       name: '3. UI Design',
       description:
-        'Rely on us for hassle-free hosting, quick deployment, and meticulous maintenance, ensuring your websites optimal performance and security',
+        'We create design systems which every page will follow under its guidelines. We iterate on each section until the mockup begins to shine',
       icon: IconThree,
     },
     {
       name: '4. Development',
       description:
-        'Boost your online visibility with our SEO expertise, helping your website achieve top rankings on Google and attract more visitors',
+        'We proceed with a pixel-perfect implementation of our designs using the latest development best practices, making them performant and Secure',
       icon: IconFour,
     },
     {
       name: '5. Launch & Scale',
       description:
-        'Stay up-to date with your websites progress with consistent updates and detailed tracking, ensuring continuous improvement & alignment with your goals.',
+        'We will get your site live and help with your launch. We will also help your business grow with optimised SEO & support',
       icon: IconFive,
     },
     {
       name: '6. Maintenance',
       description:
-        'Whether its launching an ecommerce website or executing email marketing campaigns, we cater to all your online business needs.',
+        'At this point your website is live, but we are still here in case you need anything. We will make sure the project stays up-to-date, and help fix any issues',
       icon: IconSix,
     },
   ];
@@ -67,7 +67,7 @@ export function Steps() {
                 className='border-2 border-[#D9D9D9] p-6 bg-white rounded-md'
               >
                 <div className='pb-2'>
-                  <Lottie animationData={item.icon} className='w-12 h-12' />
+                  <Lottie animationData={item.icon} className='w-10 h-10' />
                 </div>
                 {/* <div className='pb-2'>
                 <Icon />

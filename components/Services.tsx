@@ -73,7 +73,7 @@ export function Services() {
                 className='border-2 border-[#D9D9D9] p-6 bg-white rounded-md'
               >
                 <div className='pb-2'>
-                  <Lottie animationData={item.icon} className='w-12 h-12' />
+                  <Lottie animationData={item.icon} className='w-10 h-10' />
                 </div>
                 {/* <div className='pb-2'>
                 <Icon />
