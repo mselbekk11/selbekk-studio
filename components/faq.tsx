@@ -51,6 +51,7 @@ export function Faq() {
     <div className=' bg-[#F3F4F5] px-4' id='faq'>
       <div className='mx-auto max-w-7xl flex flex-col items-center md:border-dotted md:border-x-2 py-20 md:py-28 text-center'>
         <SectionTitle
+          loop='FAQ'
           title='Frequently Asked Questions'
           text='Find answers to common inquiries,
           where we address your most pressing questions'

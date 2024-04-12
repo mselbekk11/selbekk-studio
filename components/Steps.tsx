@@ -63,6 +63,7 @@ export function Steps() {
       <div className=''>
         <div className='mx-auto max-w-7xl flex flex-col items-center md:border-dotted md:border-x-2 py-20 md:py-28 text-center'>
           <SectionTitle
+          loop='Process'
             title='How this works'
             text='Discover our streamlined process, designed to guide you effortlessly from initial concept to final launch'
           />

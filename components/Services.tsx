@@ -63,6 +63,7 @@ export function Services() {
       <div className=''>
         <div className='mx-auto max-w-7xl flex flex-col items-center md:border-dotted md:border-x-2 py-20 md:py-28 text-center'>
           <SectionTitle
+            loop='Services'
             title='We handle just about everything'
             text='We handle everything from design to deployment to get your website shipped and ready to go!'
           />

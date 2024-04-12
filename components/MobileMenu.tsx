@@ -92,7 +92,7 @@ export default function MobileMenu() {
                 className='bg-[#000] py-2 px-6 text-[#fff] rounded primary_button hover:duration-300'
                 onClick={() => setMobileNavOpen(false)}
               >
-                Book a Call
+                Contact Now
               </button>
             </a>
           </li>
