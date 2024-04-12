@@ -3,9 +3,9 @@ import { SectionTitle } from './SectionTitle';
 
 export function Book() {
   return (
-    <div className=' bg-white px-4'>
+    <div className=' bg-[#F3F4F5] px-4'>
       <div className='mx-auto max-w-7xl flex flex-col items-center md:border-dotted md:border-x-2 pb-20 text-center'>
-        <div className='flex flex-col w-full bg-[#2568FF] py-20 px-6'>
+        <div className='flex flex-col w-full bg-[#2568FF] py-20 px-6 rounded-lg'>
           <h1 className='text-2xl lg:text-4xl font-semibold text-white pb-6'>
             Want a website that converts?
           </h1>

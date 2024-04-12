@@ -4,6 +4,7 @@ import { HowThisWorks } from '@/components/HowThisWorks';
 import { InfiniteMovingCardsDemo } from '@/components/Infinite-moving-cards-demo';
 // import { Pricing } from '@/components/Pricing';
 import { Projects } from '@/components/Projects';
+import { Senja } from '@/components/Senja';
 import { Services } from '@/components/Services';
 import { Steps } from '@/components/Steps';
 import { Testimonials } from '@/components/Testimonials';
@@ -22,7 +23,8 @@ export default function Home() {
         <Steps />
         {/* <Pricing /> */}
         <Testimonials />
-        <TestimonialMovingCardsDemo />
+        {/* <Senja /> */}
+        {/* <TestimonialMovingCardsDemo /> */}
         <Faq />
         <Book />
       </main>

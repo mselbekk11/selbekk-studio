@@ -12,40 +12,46 @@ import { SectionTitle } from './SectionTitle';
 export function Steps() {
   const Services = [
     {
-      name: '1. Discovery & Research',
+      name: 'Discovery & Research',
       description:
         'Through a discovery call, you tell us about your company origin, your message and your product. We then research your industry and the competition',
       icon: IconOne,
+      number: '1',
     },
     {
-      name: '2. Visual Direction',
+      name: 'Visual Direction',
       description:
         'We reimagine the brand identity through various experiments with colors, graphics, animations, composition patterns and UI shapes',
       icon: IconTwo,
+      number: '2',
     },
     {
-      name: '3. UI Design',
+      name: 'UI Design',
       description:
         'We create design systems which every page will follow under its guidelines. We iterate on each section until the mockup begins to shine',
       icon: IconThree,
+      number: '3',
     },
     {
-      name: '4. Development',
+      name: 'Development',
       description:
-        'We proceed with a pixel-perfect implementation of our designs using the latest development best practices, making them performant and Secure',
+        'We proceed with a pixel-perfect implementation of our designs using the latest development best practices, making them performant and secure',
       icon: IconFour,
+      number: '4',
     },
     {
-      name: '5. Launch & Scale',
+      name: 'Launch & Scale',
       description:
         'We will get your site live and help with your launch. We will also help your business grow with optimised SEO & support',
       icon: IconFive,
+      number: '5',
     },
     {
-      name: '6. Maintenance',
+      name: 'Maintenance',
       description:
         'At this point your website is live, but we are still here in case you need anything. We will make sure the project stays up-to-date, and help fix any issues',
       icon: IconSix,
+      number: '6',
     },
   ];
 
@@ -67,7 +73,10 @@ export function Steps() {
                 className='border-2 border-[#D9D9D9] p-6 bg-white rounded-md'
               >
                 <div className='pb-2'>
-                  <Lottie animationData={item.icon} className='w-10 h-10' />
+                  {/* <Lottie animationData={item.icon} className='w-10 h-10' /> */}
+                  <div className='w-10 h-10 rounded-full flex justify-center items-center border-2 border-[#D9D9D9] font-semibold text-[#215DFF]'>
+                    {item.number}
+                  </div>
                 </div>
                 {/* <div className='pb-2'>
                 <Icon />

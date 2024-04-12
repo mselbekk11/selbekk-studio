@@ -11,7 +11,7 @@ export function Hero() {
         <div className='border-dotted border-y-2 border-gray-200 flex flex-col items-center w-full'>
           <h1 className='text-2xl md:text-4xl lg:text-6xl font-semibold py-6 '>
             High-Performance Websites with
-            <br className='hidden lg:block' /> 
+            <br className='hidden lg:block' />
             <span className='animate'> Stunning Design & Speed</span>
           </h1>
         </div>
@@ -21,11 +21,14 @@ export function Hero() {
               We design & build websites that drive results <br /> and help your
               business grow.
             </h3>
-            <div className='grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-x-4'>
+            {/* <div className='grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-x-4'>
               <ButtonOne text='Book a Discovery Call' />
               <Link href='/#showcase'>
                 <ButtonTwo text='See Previous Work' />
               </Link>
+            </div> */}
+            <div className='flex justify-center'>
+              <ButtonOne text='Contact Now' />
             </div>
           </div>
         </div>

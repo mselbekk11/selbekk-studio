@@ -34,7 +34,7 @@ export function Header() {
           ))}
         </div>
         <div className='hidden lg:flex min-w-[120px]'>
-          <ButtonOne text='Book a call' />
+          <ButtonOne text='Contact Now' />
         </div>
       </nav>
     </header>

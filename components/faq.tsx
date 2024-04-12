@@ -48,7 +48,7 @@ export function Faq() {
   ];
 
   return (
-    <div className=' bg-white px-4' id='faq'>
+    <div className=' bg-[#F3F4F5] px-4' id='faq'>
       <div className='mx-auto max-w-7xl flex flex-col items-center md:border-dotted md:border-x-2 py-20 md:py-28 text-center'>
         <SectionTitle
           title='Frequently Asked Questions'
@@ -56,7 +56,7 @@ export function Faq() {
           where we address your most pressing questions'
         />
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-12 md:gap-6 text-left w-full'>
-          <div className='lg:col-span-2 border-[#000] border-2 px-6 pb-6 bg-[#F9F9F9]'>
+          <div className='lg:col-span-2 border-[#000] border-2 px-6 pb-6 bg-[#fff] rounded-lg'>
             <dl className='space-y-6 divide-y divide-gray-900/10'>
               {faqs.map((faq) => (
                 <Disclosure as='div' key={faq.question} className='pt-6'>
@@ -87,7 +87,7 @@ export function Faq() {
               ))}
             </dl>
           </div>
-          <div className='bg-[#000] text-white p-6 max-h-[300px] lg:flex flex-col items-center justify-center hidden'>
+          <div className='bg-[#000] text-white p-6 max-h-[300px] lg:flex flex-col items-center justify-center hidden rounded-lg'>
             <Image src='/logo_white-2.png' alt='logo' width='70' height='70' />
             <div className='py-4'>
               <p>Have more Questions?</p>
