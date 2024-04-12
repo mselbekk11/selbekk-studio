@@ -34,7 +34,7 @@ export function Hero() {
         </div>
         <div className='border-dotted border-b-2 border-gray-200 flex flex-col items-center w-full'>
           <div className='py-6 px-8 max-w-2xl flex flex-col items-center md:border-dotted md:border-x-2 border-gray-200'>
-            <h3 className='text-sm font-medium text-gray-400 pb-4'>
+            <h3 className='text-sm font-medium text-gray-500 pb-4'>
               Trusted by founders globally
             </h3>
             <ClientList />
