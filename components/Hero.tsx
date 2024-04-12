@@ -10,13 +10,13 @@ export function Hero() {
       <div className='mx-auto max-w-7xl flex flex-col items-center border-dotted border-x-2 pt-10 lg:pt-28 text-center'>
         <div className='border-dotted border-y-2 border-gray-200 flex flex-col items-center w-full'>
           <h1 className='text-2xl md:text-4xl lg:text-6xl font-semibold py-6 '>
-            High-Performance Websites with
-            <br className='hidden lg:block' />
+            High-Performance <br className='block lg:hidden' /> Websites with
+            <br className='lg:block' />
             <span className='animate'> Stunning Design & Speed</span>
           </h1>
         </div>
         <div className='border-dotted border-b-2 border-gray-200 w-full flex flex-col items-center'>
-          <div className='py-12 max-w-2xl'>
+          <div className='py-6 max-w-2xl'>
             <h3 className='text-sm md:text-lg font-medium text-gray-500 pb-6'>
               We design & build websites that drive results <br /> and help your
               business grow.
@@ -33,9 +33,9 @@ export function Hero() {
           </div>
         </div>
         <div className='border-dotted border-b-2 border-gray-200 flex flex-col items-center w-full'>
-          <div className='py-8 px-8 max-w-2xl flex flex-col items-center md:border-dotted md:border-x-2 border-gray-200'>
-            <h3 className='text-sm font-medium text-gray-500 pb-4'>
-              Trusted by Founders and Small Business owners globally
+          <div className='py-6 px-8 max-w-2xl flex flex-col items-center md:border-dotted md:border-x-2 border-gray-200'>
+            <h3 className='text-sm font-medium text-gray-400 pb-4'>
+              Trusted by founders globally
             </h3>
             <ClientList />
             <Stars />
