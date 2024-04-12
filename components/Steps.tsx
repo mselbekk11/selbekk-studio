@@ -75,7 +75,7 @@ export function Steps() {
               >
                 <div className='pb-2'>
                   {/* <Lottie animationData={item.icon} className='w-10 h-10' /> */}
-                  <div className='w-10 h-10 rounded-full flex justify-center items-center border-2 border-[#D9D9D9] font-semibold text-[#215DFF]'>
+                  <div className='w-10 h-10 rounded-full flex justify-center items-center bg-indigo-600/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-600/10'>
                     {item.number}
                   </div>
                 </div>
