@@ -6,6 +6,11 @@ import { AlignJustify, X } from 'lucide-react';
 import { ButtonOne } from './ButtonOne';
 
 export default function MobileMenu() {
+  // const [isOpen, setIsOpen] = React.useState(false);
+  // const toggleDrawer = () => {
+  //   setIsOpen((prevState) => !prevState);
+  // };
+
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false);
 
   const trigger = useRef<HTMLButtonElement>(null);
@@ -43,6 +48,11 @@ export default function MobileMenu() {
     return () => document.removeEventListener('keydown', keyHandler);
   });
 
+  // const bothToggle = () => {
+  //   setMobileNavOpen(false);
+  //   setIsOpen((prevState) => !prevState);
+  // };
+
   return (
     <div className='lg:hidden flex flex-col items-center'>
       {/* Hamburger button */}
@@ -72,7 +82,7 @@ export default function MobileMenu() {
             : { maxHeight: 0, opacity: 0.8 }
         }
       >
-        <ul className='bg-white px-6 py-6 border-2 border-gray-200 flex flex-col items-center'>
+        <ul className='bg-white px-6 pt-6 border-2 border-gray-200 flex flex-col items-center'>
           {navigation.map((item) => (
             <li key={item.name} className='pb-6'>
               <Link
@@ -87,14 +97,12 @@ export default function MobileMenu() {
           ))}
 
           <li>
-            <a href='https://cal.com/morgan-selbekk-9fhtxr'>
-              <button
-                className='bg-[#000] py-2 px-6 text-[#fff] rounded primary_button hover:duration-300'
-                onClick={() => setMobileNavOpen(false)}
-              >
-                Contact Now
-              </button>
-            </a>
+            {/* <button
+              className='bg-[#000] py-2 px-6 text-[#fff] rounded primary_button hover:duration-300 font-semibold'
+              onClick={() => setMobileNavOpen(false)}
+            >
+              Contact Now
+            </button> */}
           </li>
         </ul>
       </nav>

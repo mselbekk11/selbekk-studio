@@ -1,7 +1,19 @@
+'use client';
+
 import { ButtonOne } from './ButtonOne';
 import { SectionTitle } from './SectionTitle';
 
+import React from 'react';
+import Drawer from 'react-modern-drawer';
+import 'react-modern-drawer/dist/index.css';
+import ContactForm from './ContactForm';
+
 export function Book() {
+  const [isOpen, setIsOpen] = React.useState(false);
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState);
+  };
+
   return (
     <div className=' bg-[#F3F4F5] px-4'>
       <div className='mx-auto max-w-7xl flex flex-col items-center md:border-dotted md:border-x-2 pb-20 text-center'>
@@ -15,11 +27,36 @@ export function Book() {
             Results.
           </h3>
           <div>
-            <a href='https://cal.com/morgan-selbekk-9fhtxr'>
+            {/* <a href='https://cal.com/morgan-selbekk-9fhtxr'>
               <button className='bg-[#000] py-2 px-6 text-[#fff] rounded secondary_button hover:duration-300'>
                 Book a Discovery Call
               </button>
-            </a>
+            </a> */}
+            <button
+              className='font-semibold text-base bg-[#000] py-2 px-6 text-[#fff] rounded secondary_button hover:duration-300'
+              onClick={toggleDrawer}
+            >
+              Contact Now
+            </button>
+            {}
+            <Drawer
+              open={isOpen}
+              size='40vw'
+              onClose={toggleDrawer}
+              direction='right'
+              className='hidden lg:block'
+            >
+              <ContactForm />
+            </Drawer>
+            <Drawer
+              open={isOpen}
+              size='90vh'
+              onClose={toggleDrawer}
+              direction='bottom'
+              className='block lg:hidden'
+            >
+              <ContactForm />
+            </Drawer>
           </div>
         </div>
       </div>

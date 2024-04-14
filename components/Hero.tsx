@@ -1,10 +1,21 @@
+'use client';
+
 import Link from 'next/link';
 import { ButtonOne } from './ButtonOne';
-import { ButtonTwo } from './ButtonTwo';
 import { ClientList } from './ClientList';
 import { Stars } from './Stars';
 
+import React from 'react';
+import Drawer from 'react-modern-drawer';
+import 'react-modern-drawer/dist/index.css';
+import ContactForm from './ContactForm';
+
 export function Hero() {
+  const [isOpen, setIsOpen] = React.useState(false);
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState);
+  };
+
   return (
     <div className='px-4'>
       <div className='mx-auto max-w-7xl flex flex-col items-center border-dotted border-x-2 pt-10 lg:pt-28 text-center'>
@@ -21,14 +32,33 @@ export function Hero() {
               We design & build websites that drive results <br /> and help your
               business grow.
             </h3>
-            {/* <div className='grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-x-4'>
-              <ButtonOne text='Book a Discovery Call' />
-              <Link href='/#showcase'>
-                <ButtonTwo text='See Previous Work' />
-              </Link>
-            </div> */}
             <div className='flex justify-center'>
-              <ButtonOne text='Contact Now' />
+              {/* <ButtonOne text='Contact Now' /> */}
+              <button
+                className='font-semibold text-base bg-[#000] py-2 px-6 text-[#fff] rounded primary_button hover:duration-300'
+                onClick={toggleDrawer}
+              >
+                Contact Now
+              </button>
+              {}
+              <Drawer
+                open={isOpen}
+                size='40vw'
+                onClose={toggleDrawer}
+                direction='right'
+                className='hidden lg:block'
+              >
+                <ContactForm />
+              </Drawer>
+              <Drawer
+                open={isOpen}
+                size='90vh'
+                onClose={toggleDrawer}
+                direction='bottom'
+                className='block lg:hidden'
+              >
+                <ContactForm />
+              </Drawer>
             </div>
           </div>
         </div>

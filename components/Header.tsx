@@ -1,8 +1,14 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { ButtonOne } from './ButtonOne';
 import { AlignJustify } from 'lucide-react';
 import MobileMenu from './MobileMenu';
+
+import Drawer from 'react-modern-drawer';
+import ContactForm from './ContactForm';
+import React from 'react';
 
 export function Header() {
   const navigation = [
@@ -10,6 +16,11 @@ export function Header() {
     { name: 'Work', href: '/#showcase' },
     { name: 'FAQ', href: '/#faq' },
   ];
+
+  const [isOpen, setIsOpen] = React.useState(false);
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState);
+  };
 
   return (
     <header className='w-full bg-[#fff] sticky top-0 z-50 shadow-md shadow-slate-300'>
@@ -34,7 +45,22 @@ export function Header() {
           ))}
         </div>
         <div className='hidden lg:flex min-w-[120px]'>
-          <ButtonOne text='Contact Now' />
+          <button
+            className='font-semibold text-base bg-[#000] py-2 px-6 text-[#fff] rounded primary_button hover:duration-300'
+            onClick={toggleDrawer}
+          >
+            Contact Now
+          </button>
+          <Drawer
+            open={isOpen}
+            size='40vw'
+            onClose={toggleDrawer}
+            direction='right'
+            className='hidden lg:block'
+          >
+            <ContactForm />
+          </Drawer>
+          {/* <ButtonOne text='Contact Now'  /> */}
         </div>
       </nav>
     </header>

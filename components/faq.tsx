@@ -7,6 +7,11 @@ import { Disclosure } from '@headlessui/react';
 // import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline';
 import { Plus, Minus } from 'lucide-react';
 
+import React from 'react';
+import Drawer from 'react-modern-drawer';
+import 'react-modern-drawer/dist/index.css';
+import ContactForm from './ContactForm';
+
 export function Faq() {
   const faqs = [
     {
@@ -46,6 +51,11 @@ export function Faq() {
         'We provide you with a video tutorial on how to make changes to your website. If you still need help, we can make changes for you at an hourly rate OR you can sign up for our retainer services. Contact us on the website chat for more details',
     },
   ];
+
+  const [isOpen, setIsOpen] = React.useState(false);
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState);
+  };
 
   return (
     <div className=' bg-[#F3F4F5] px-4' id='faq'>
@@ -94,11 +104,26 @@ export function Faq() {
               <p>Have more Questions?</p>
               <p>Book a free Intro Call</p>
             </div>
-            <a href='https://cal.com/morgan-selbekk-9fhtxr'>
+            {/* <a href='https://cal.com/morgan-selbekk-9fhtxr'>
               <button className='bg-[#fff] py-2 px-6 text-[#000] rounded primary_button hover:duration-300 w-full'>
                 Book a Discovery Call
               </button>
-            </a>
+            </a> */}
+            <button
+              className='font-semibold text-base bg-[#fff] py-2 px-6 text-[#000] rounded primary_button hover:duration-300'
+              onClick={toggleDrawer}
+            >
+              Contact Now
+            </button>
+            <Drawer
+              open={isOpen}
+              size='40vw'
+              onClose={toggleDrawer}
+              direction='right'
+              className='hidden lg:block'
+            >
+              <ContactForm />
+            </Drawer>
           </div>
         </div>
       </div>
