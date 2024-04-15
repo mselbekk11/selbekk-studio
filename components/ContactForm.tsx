@@ -16,14 +16,14 @@ export default function ContactForm() {
   };
 
   return (
-    <div className='p-6'>
+    <div className='p-6 h-full'>
       <h1 className='text-lg md:text-3xl font-semibold pb-6 lg:pb-12 text-gray-900'>
         Building something new? Share a few details and we’ll get right back to
         you{' '}
       </h1>
       <form method='POST' onSubmit={onSubmit}>
         <div className='flex flex-col'>
-          <div className='text-left pb-4'>
+          <div className='text-left pb-2 lg:pb-4'>
             <label
               htmlFor='name'
               className='block text-xs lg:text-sm font-medium leading-6 text-gray-900'
@@ -44,7 +44,7 @@ export default function ContactForm() {
             </div>
           </div>
 
-          <div className='text-left pb-4'>
+          <div className='text-left pb-2 lg:pb-4'>
             <label
               htmlFor='company'
               className='block text-xs lg:text-sm font-medium leading-6 text-gray-900'
@@ -64,7 +64,7 @@ export default function ContactForm() {
             </div>
           </div>
 
-          <div className='text-left pb-4'>
+          <div className='text-left pb-2 lg:pb-4'>
             <label
               htmlFor='email'
               className='block text-xs lg:text-sm font-medium leading-6 text-gray-900'
@@ -84,7 +84,7 @@ export default function ContactForm() {
             </div>
           </div>
 
-          <div className='text-left pb-4'>
+          <div className='text-left pb-2 lg:pb-4'>
             <label
               htmlFor='budget'
               className='block text-xs lg:text-sm font-medium leading-6 text-gray-900'
@@ -111,14 +111,14 @@ export default function ContactForm() {
             </div>
           </div>
 
-          <div className='text-left pb-4'>
+          <div className='text-left pb-2 lg:pb-4'>
             <label
               htmlFor='date'
               className='block text-xs lg:text-sm font-medium leading-6 text-gray-900'
             >
               Target Launch
             </label>
-            <div className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-xs lg:text-sm sm:leading-6'>
+            <div className='mt-2 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-xs lg:text-sm sm:leading-6'>
               <input
                 value={launch}
                 onChange={(e) => setLaunch(e.target.value)}
@@ -131,14 +131,14 @@ export default function ContactForm() {
             </div>
           </div>
 
-          <div className='text-left pb-4'>
+          <div className='text-left pb-2 lg:pb-4'>
             <label
               htmlFor='message'
               className='block text-xs lg:text-sm font-medium leading-6 text-gray-900'
             >
               Message
             </label>
-            <div className='bg-white grid grid-cols-1 lg:max-w-none'>
+            <div className='bg-white grid grid-cols-1 lg:max-w-none mt-2'>
               <textarea
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}

@@ -44,6 +44,7 @@ export function Hero() {
               <Drawer
                 open={isOpen}
                 size='40vw'
+                lockBackgroundScroll={true}
                 onClose={toggleDrawer}
                 direction='right'
                 className='hidden lg:block'
@@ -52,9 +53,10 @@ export function Hero() {
               </Drawer>
               <Drawer
                 open={isOpen}
-                size='90vh'
+                size='90vw'
+                lockBackgroundScroll={true}
                 onClose={toggleDrawer}
-                direction='bottom'
+                direction='right'
                 className='block lg:hidden'
               >
                 <ContactForm />
