@@ -5,17 +5,7 @@ import { ButtonOne } from './ButtonOne';
 import { ClientList } from './ClientList';
 import { Stars } from './Stars';
 
-import React from 'react';
-import Drawer from 'react-modern-drawer';
-import 'react-modern-drawer/dist/index.css';
-import ContactForm from './ContactForm';
-
-export function Hero() {
-  const [isOpen, setIsOpen] = React.useState(false);
-  const toggleDrawer = () => {
-    setIsOpen((prevState) => !prevState);
-  };
-
+export default function Hero() {
   return (
     <div className='px-4'>
       <div className='mx-auto max-w-7xl flex flex-col items-center border-dotted border-x-2 pt-10 lg:pt-28 text-center'>
@@ -34,33 +24,14 @@ export function Hero() {
             </h3>
             <div className='flex justify-center'>
               {/* <ButtonOne text='Contact Now' /> */}
-              <button
-                className='font-semibold text-base bg-[#000] py-2 px-6 text-[#fff] rounded primary_button hover:duration-300'
-                onClick={toggleDrawer}
-              >
-                Contact Now
-              </button>
-              {}
-              <Drawer
-                open={isOpen}
-                size='40vw'
-                lockBackgroundScroll={true}
-                onClose={toggleDrawer}
-                direction='right'
-                className='hidden lg:block'
-              >
-                <ContactForm />
-              </Drawer>
-              <Drawer
-                open={isOpen}
-                size='90vw'
-                lockBackgroundScroll={true}
-                onClose={toggleDrawer}
-                direction='right'
-                className='block lg:hidden'
-              >
-                <ContactForm />
-              </Drawer>
+              <Link href='/contact'>
+                <button
+                  className='font-semibold text-base bg-[#000] py-2 px-6 text-[#fff] rounded primary_button hover:duration-300'
+                  // onClick={toggleDrawer}
+                >
+                  Contact Now
+                </button>
+              </Link>
             </div>
           </div>
         </div>

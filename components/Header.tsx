@@ -6,9 +6,9 @@ import { ButtonOne } from './ButtonOne';
 import { AlignJustify } from 'lucide-react';
 import MobileMenu from './MobileMenu';
 
-import Drawer from 'react-modern-drawer';
-import ContactForm from './ContactForm';
-import React from 'react';
+// import Drawer from 'react-modern-drawer';
+// import ContactForm from './ContactForm';
+// import React from 'react';
 
 export function Header() {
   const navigation = [
@@ -17,10 +17,10 @@ export function Header() {
     { name: 'FAQ', href: '/#faq' },
   ];
 
-  const [isOpen, setIsOpen] = React.useState(false);
-  const toggleDrawer = () => {
-    setIsOpen((prevState) => !prevState);
-  };
+  // const [isOpen, setIsOpen] = React.useState(false);
+  // const toggleDrawer = () => {
+  //   setIsOpen((prevState) => !prevState);
+  // };
 
   return (
     <header className='w-full bg-[#fff] sticky top-0 z-50 shadow-md shadow-slate-300'>
@@ -45,13 +45,15 @@ export function Header() {
           ))}
         </div>
         <div className='hidden lg:flex min-w-[120px]'>
-          <button
-            className='font-semibold text-base bg-[#000] py-2 px-6 text-[#fff] rounded primary_button hover:duration-300'
-            onClick={toggleDrawer}
-          >
-            Contact Now
-          </button>
-          <Drawer
+          <Link href='/contact'>
+            <button
+              className='font-semibold text-base bg-[#000] py-2 px-6 text-[#fff] rounded primary_button hover:duration-300'
+              // onClick={toggleDrawer}
+            >
+              Contact Now
+            </button>
+          </Link>
+          {/* <Drawer
             open={isOpen}
             size='40vw'
             onClose={toggleDrawer}
@@ -59,7 +61,7 @@ export function Header() {
             className='hidden lg:block'
           >
             <ContactForm />
-          </Drawer>
+          </Drawer> */}
           {/* <ButtonOne text='Contact Now'  /> */}
         </div>
       </nav>

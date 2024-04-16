@@ -6,11 +6,12 @@ import { SectionTitle } from './SectionTitle';
 import { Disclosure } from '@headlessui/react';
 // import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline';
 import { Plus, Minus } from 'lucide-react';
+import Link from 'next/link';
 
-import React from 'react';
-import Drawer from 'react-modern-drawer';
-import 'react-modern-drawer/dist/index.css';
-import ContactForm from './ContactForm';
+// import React from 'react';
+// import Drawer from 'react-modern-drawer';
+// import 'react-modern-drawer/dist/index.css';
+// import ContactForm from './ContactForm';
 
 export function Faq() {
   const faqs = [
@@ -52,10 +53,10 @@ export function Faq() {
     },
   ];
 
-  const [isOpen, setIsOpen] = React.useState(false);
-  const toggleDrawer = () => {
-    setIsOpen((prevState) => !prevState);
-  };
+  // const [isOpen, setIsOpen] = React.useState(false);
+  // const toggleDrawer = () => {
+  //   setIsOpen((prevState) => !prevState);
+  // };
 
   return (
     <div className=' bg-[#F3F4F5] px-4' id='faq'>
@@ -109,21 +110,14 @@ export function Faq() {
                 Book a Discovery Call
               </button>
             </a> */}
-            <button
-              className='font-semibold text-base bg-[#fff] py-2 px-6 text-[#000] rounded primary_button hover:duration-300'
-              onClick={toggleDrawer}
-            >
-              Contact Now
-            </button>
-            <Drawer
-              open={isOpen}
-              size='40vw'
-              onClose={toggleDrawer}
-              direction='right'
-              className='hidden lg:block'
-            >
-              <ContactForm />
-            </Drawer>
+            <Link href='/contact'>
+              <button
+                className='font-semibold text-base bg-[#fff] py-2 px-6 text-[#000] rounded primary_button hover:duration-300'
+                // onClick={toggleDrawer}
+              >
+                Contact Now
+              </button>
+            </Link>
           </div>
         </div>
       </div>

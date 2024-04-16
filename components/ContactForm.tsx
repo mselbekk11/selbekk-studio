@@ -1,8 +1,12 @@
 'use client';
+
 import { FormEvent, useState } from 'react';
+import { supabase } from '@/app/config/supabaseClient';
 
 export default function ContactForm() {
   let currentDate = new Date().toJSON().slice(0, 10);
+  // console.log(supabase);
+
   const [name, setName] = useState('');
   const [company, setCompany] = useState('');
   const [email, setEmail] = useState('');
@@ -12,15 +16,29 @@ export default function ContactForm() {
 
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    console.log(name, company, email, budget, launch, message);
+    // console.log(name, company, email, budget, launch, message);
+
+    const { data, error } = await supabase.from('selbekk').insert([
+      {
+        name,
+        company,
+        email,
+        budget,
+        launch,
+        message,
+      },
+    ]);
+
+    if (error) {
+      console.log(error);
+    }
+    if (data) {
+      console.log(data);
+    }
   };
 
   return (
-    <div className='p-6 h-full'>
-      <h1 className='text-lg md:text-3xl font-semibold pb-6 lg:pb-12 text-gray-900'>
-        Building something new? Share a few details and we’ll get right back to
-        you{' '}
-      </h1>
+    <div className='p-6 h-full border rounded-md border-x-2 border-y-2 bg-[#fff] w-full'>
       <form method='POST' onSubmit={onSubmit}>
         <div className='flex flex-col'>
           <div className='text-left pb-2 lg:pb-4'>
@@ -78,6 +96,7 @@ export default function ContactForm() {
                 type='email'
                 name='email'
                 id='email'
+                required
                 placeholder='chloe@new.co'
                 className='px-3.5 py-2 block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-xs lg:text-sm sm:leading-6'
               />
@@ -95,15 +114,18 @@ export default function ContactForm() {
               <div className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-xs lg:text-sm sm:leading-6'>
                 <select
                   value={budget}
+                  // value='$1,000 - $5,000'
                   onChange={(e) => setBudget(e.target.value)}
                   id='budget'
                   name='budget'
                   required
                   className='w-full'
+                  // defaultValue='$1,000 - $5,000'
                 >
-                  <option value='$1,000 - $5,000' selected>
-                    $1,000 - $5,000
+                  <option value='' disabled selected hidden>
+                    Choose a Budget
                   </option>
+                  <option value='$1,000 - $5,000'>$1,000 - $5,000</option>
                   <option value='$5,000 - $10,000'>$5,000 - $10,000</option>
                   <option value='$10,000 +'>$10,000 +</option>
                 </select>
@@ -131,7 +153,7 @@ export default function ContactForm() {
             </div>
           </div>
 
-          <div className='text-left pb-2 lg:pb-4'>
+          <div className='text-left pb-4 lg:pb-4'>
             <label
               htmlFor='message'
               className='block text-xs lg:text-sm font-medium leading-6 text-gray-900'

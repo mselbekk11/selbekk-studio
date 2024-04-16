@@ -82,7 +82,7 @@ export default function MobileMenu() {
             : { maxHeight: 0, opacity: 0.8 }
         }
       >
-        <ul className='bg-white px-6 pt-6 border-2 border-gray-200 flex flex-col items-center'>
+        <ul className='bg-white px-6 py-6 border-2 border-gray-200 flex flex-col items-center'>
           {navigation.map((item) => (
             <li key={item.name} className='pb-6'>
               <Link
@@ -97,12 +97,14 @@ export default function MobileMenu() {
           ))}
 
           <li>
-            {/* <button
+          <Link href='/contact'>
+            <button
               className='bg-[#000] py-2 px-6 text-[#fff] rounded primary_button hover:duration-300 font-semibold'
               onClick={() => setMobileNavOpen(false)}
             >
               Contact Now
-            </button> */}
+            </button>
+            </Link>
           </li>
         </ul>
       </nav>
