@@ -27,8 +27,6 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>My page title</title>
-        {/* <meta property="og:image" content="https://myurl.com/ogImage.png" /> */}
         <meta
           property='og:image'
           content={`https://www.selbekk.studio/${logo}`}
