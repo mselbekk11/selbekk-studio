@@ -14,6 +14,10 @@ import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
 import ContactForm from '../components/ContactForm';
 
+import logo from '@/public/selbekk-studio.png';
+
+import Head from 'next/head';
+
 export default function Home() {
   const [isOpen, setIsOpen] = React.useState(false);
   const toggleDrawer = () => {
@@ -22,6 +26,14 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>My page title</title>
+        {/* <meta property="og:image" content="https://myurl.com/ogImage.png" /> */}
+        <meta
+          property='og:image'
+          content={`https://www.selbekk.studio/${logo}`}
+        />
+      </Head>
       <main className='min-h-screen'>
         <Hero />
         <InfiniteMovingCardsDemo />
