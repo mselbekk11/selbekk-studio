@@ -1,15 +1,24 @@
 'use client';
+
+import React, { useState } from 'react';
 import ContactForm from '../../components/ContactForm';
+import SuccessMessage from '../../components/SuccessMessage';
 
 export default function TestTwo() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmission = () => {
+    setIsSubmitted(true);
+  };
+
   return (
     <div className='bg-[#F3F4F5]'>
       <div className='min-h-screen mx-auto max-w-[800px] flex flex-col items-center pt-12 px-6 text-left'>
-      <h1 className='text-lg md:text-3xl font-semibold pb-6 lg:pb-12 text-gray-900'>
-        Building something new? Share a few details and we’ll get right back to
-        you{' '}
-      </h1>
-        <ContactForm />
+        {isSubmitted ? (
+          <SuccessMessage />
+        ) : (
+          <ContactForm onFormSubmit={handleSubmission} />
+        )}
       </div>
     </div>
   );
