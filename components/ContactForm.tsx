@@ -4,6 +4,7 @@ import { FormEvent, useState } from 'react';
 import { supabase } from '@/app/config/supabaseClient';
 
 export default function ContactForm() {
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   let currentDate = new Date().toJSON().slice(0, 10);
   // console.log(supabase);
 
@@ -17,6 +18,7 @@ export default function ContactForm() {
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
     // console.log(name, company, email, budget, launch, message);
+    setIsLoading(true); // Set loading to true when the request starts
 
     const { data, error } = await supabase.from('selbekk').insert([
       {
@@ -34,6 +36,34 @@ export default function ContactForm() {
     }
     if (data) {
       console.log(data);
+    }
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        body: JSON.stringify({
+          name,
+          company,
+          email,
+          budget,
+          launch,
+          message,
+        }),
+        headers: {
+          'content-type': 'application/json',
+        },
+      });
+
+      setName('');
+      setCompany('');
+      setEmail('');
+      setBudget('');
+      setLaunch('');
+      setMessage('');
+    } catch (err: any) {
+      console.log('Err', err);
+    } finally {
+      setIsLoading(false); // Set loading to false when the request completes
     }
   };
 
@@ -122,7 +152,7 @@ export default function ContactForm() {
                   className='w-full'
                   // defaultValue='$1,000 - $5,000'
                 >
-                  <option value='' disabled selected hidden>
+                  <option value='' disabled hidden>
                     Choose a Budget
                   </option>
                   <option value='$1,000 - $5,000'>$1,000 - $5,000</option>
@@ -176,8 +206,9 @@ export default function ContactForm() {
           <button
             className='font-semibold text-base bg-[#000] py-2 px-6 text-[#fff] rounded primary_button hover:duration-300'
             type='submit'
+            disabled={isLoading}
           >
-            Submit
+            {isLoading ? 'Sending...' : 'Submit'}
           </button>
         </div>
       </form>
