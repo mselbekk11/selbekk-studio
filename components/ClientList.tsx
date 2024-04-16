@@ -12,20 +12,13 @@ export function ClientList() {
       />
       <Image
         className='w-10 h-10 rounded-full'
-        src='/profile-shot-chris.png'
+        src='/karl.png'
         alt='/'
         width='100'
         height='100'
       />
       <Image
         className='w-10 h-10 rounded-full'
-        src='/profile-shot-jack.png'
-        alt='/'
-        width='100'
-        height='100'
-      />
-      <Image
-        className='w-10 h-10 rounded-full '
         src='/profile-shot-joe.png'
         alt='/'
         width='100'
@@ -33,7 +26,7 @@ export function ClientList() {
       />
       <Image
         className='w-10 h-10 rounded-full '
-        src='/profile-shot-alex.png'
+        src='/andrew.png'
         alt='/'
         width='100'
         height='100'
@@ -41,6 +34,13 @@ export function ClientList() {
       <Image
         className='w-10 h-10 rounded-full '
         src='/profile-shot-per.png'
+        alt='/'
+        width='100'
+        height='100'
+      />
+      <Image
+        className='w-10 h-10 rounded-full '
+        src='/greg.png'
         alt='/'
         width='100'
         height='100'
