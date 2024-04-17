@@ -13,10 +13,17 @@ const inter = Inter({ subsets: ['latin'] });
 
 const space = Space_Grotesk({ subsets: ['latin'] });
 
+import Logo from '@/public/selbekk-studio.png';
+// const imageURL = `https://www.selbekk.studio/${Logo}`;
+const imageURL = `https://www.selbekk.studio/selbekk-studio.png`;
+
 export const metadata: Metadata = {
   title: 'Selbekk Studio',
   description:
     'We design & build websites that drive results and help your Business grow. No BS. Just Results.',
+  openGraph: {
+    images: imageURL,
+  },
 };
 
 export default function RootLayout({

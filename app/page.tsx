@@ -14,8 +14,8 @@ import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
 import ContactForm from '../components/ContactForm';
 
-import Head from 'next/head';
-import Logo from '@/public/selbekk-studio.png';
+// import Head from 'next/head';
+// import Logo from '@/public/selbekk-studio.png';
 
 export default function Home() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <>
-      <Head>
+      {/* <Head>
         <meta property='og:title' content='Selbekk Studio' />
         <meta
           property='og:description'
@@ -35,8 +35,7 @@ export default function Home() {
           property='og:image'
           content={`https://www.selbekk.studio/${Logo}`}
         />
-        {/* Add additional Open Graph tags as needed */}
-      </Head>
+      </Head> */}
 
       <main className='min-h-screen'>
         <Hero />
