@@ -15,7 +15,7 @@ const space = Space_Grotesk({ subsets: ['latin'] });
 
 import Logo from '@/public/selbekk-studio.png';
 // const imageURL = `https://www.selbekk.studio/${Logo}`;
-const imageURL = `https://www.selbekk.studio/selbekk-studio.png`;
+const imageURL = `https://www.selbekk.studio/Selbekk-Studio-og.png`;
 
 export const metadata: Metadata = {
   title: 'Selbekk Studio',

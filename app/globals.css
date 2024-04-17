@@ -136,3 +136,10 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #fff
 
 /* ----------------- */
 
+/* .background {
+  padding: 12px 24px 10px;
+  background: linear-gradient(to top, var(--geist-background) 0, hsla(0, 48%, 38%, 0) 100%), linear-gradient(to right, rgb(var(--gradient-from, 192.5 192.5 192.5) / .08) 0, rgb(var(--gradient-to, 192.5 192.5 192.5) / .08) 100%);
+  background-size: 100% 100%, 100% 100%, 1440px 1px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+} */
