@@ -12,10 +12,10 @@ export function Projects() {
       href: 'https://www.advancedortholabsf.com/',
     },
     {
-      name: 'Kodama',
-      description: 'Family friendly NFT vesting software',
-      image: '/scroll7.png',
-      href: 'https://www.kodamanft.io/',
+      name: 'PicAI',
+      description: 'AI Photo Generator ',
+      image: '/scroll9.png',
+      href: 'https://www.picai.so/',
     },
     {
       name: 'JennyCo',
