@@ -110,7 +110,7 @@ export function Faq() {
                 Book a Discovery Call
               </button>
             </a> */}
-            <Link href='/contact'>
+            <Link href='mailto:mselbekk11@gmail.com'>
               <button
                 className='font-semibold text-base bg-[#fff] py-2 px-6 text-[#000] rounded primary_button hover:duration-300'
                 // onClick={toggleDrawer}

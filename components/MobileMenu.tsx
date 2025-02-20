@@ -97,13 +97,13 @@ export default function MobileMenu() {
           ))}
 
           <li>
-          <Link href='/contact'>
-            <button
-              className='bg-[#000] py-2 px-6 text-[#fff] rounded primary_button hover:duration-300 font-semibold'
-              onClick={() => setMobileNavOpen(false)}
-            >
-              Contact Now
-            </button>
+            <Link href='mailto:mselbekk11@gmail.com'>
+              <button
+                className='bg-[#000] py-2 px-6 text-[#fff] rounded primary_button hover:duration-300 font-semibold'
+                onClick={() => setMobileNavOpen(false)}
+              >
+                Contact Now
+              </button>
             </Link>
           </li>
         </ul>

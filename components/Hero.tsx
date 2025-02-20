@@ -24,7 +24,7 @@ export default function Hero() {
             </h3>
             <div className='flex justify-center animate-slideFromDownAndFade [animation-delay:var(--animation-delay)]'>
               {/* <ButtonOne text='Contact Now' /> */}
-              <Link href='/contact'>
+              <Link href='mailto:mselbekk11@gmail.com'>
                 <button
                   className='font-semibold text-base bg-[#000] py-2 px-6 text-[#fff] rounded primary_button hover:duration-300'
                   // onClick={toggleDrawer}

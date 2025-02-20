@@ -33,7 +33,7 @@ export function Book() {
                 Book a Discovery Call
               </button>
             </a> */}
-            <Link href='/contact'>
+            <Link href='mailto:mselbekk11@gmail.com'>
               <button
                 className='font-semibold text-base bg-[#000] py-2 px-6 text-[#fff] rounded secondary_button hover:duration-300'
                 // onClick={toggleDrawer}
