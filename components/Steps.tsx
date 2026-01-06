@@ -6,7 +6,6 @@ import IconThree from '../assets/web-design.json';
 import IconFour from '../assets/interface-settings.json';
 import IconFive from '../assets/launcher-bazooka.json';
 import IconSix from '../assets/support-service.json';
-import Lottie from 'lottie-react';
 import { SectionTitle } from './SectionTitle';
 
 export function Steps() {

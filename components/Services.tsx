@@ -12,8 +12,10 @@ import IconThree from '../assets/servers.json';
 import IconFour from '../assets/magnifier-plus.json';
 import IconFive from '../assets/chat-message.json';
 import IconSix from '../assets/approve-checked-simple.json';
-import Lottie from 'lottie-react';
+import dynamic from 'next/dynamic';
 import { SectionTitle } from './SectionTitle';
+
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 export function Services() {
   const Services = [
