@@ -13,7 +13,7 @@ export default function Hero() {
           <h1 className='text-2xl md:text-4xl lg:text-6xl font-semibold py-6 intro animate-slideFromDownAndFade'>
             High-Performance <br className='block lg:hidden' /> Websites with
             <br className='lg:block' />
-            <span className='animate'> Stunning Design & Speed.</span>
+            <span className='animate'> Stunning Design & Speed</span>
           </h1>
         </div>
         <div className='border-dotted border-b-2 border-gray-200 w-full flex flex-col items-center'>
