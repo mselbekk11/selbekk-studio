@@ -20,7 +20,7 @@ export default function Hero() {
           <div className='py-6 max-w-2xl'>
             <h3 className='text-sm md:text-lg font-medium text-gray-500 pb-6 animate-slideFromDownAndFade [animation-delay:var(--animation-delay)]'>
               We design & build websites that drive results <br /> and help your
-              business grow.
+              business grow
             </h3>
             <div className='flex justify-center animate-slideFromDownAndFade [animation-delay:var(--animation-delay)]'>
               {/* <ButtonOne text='Contact Now' /> */}
